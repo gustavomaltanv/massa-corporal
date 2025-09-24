@@ -16,3 +16,44 @@ Complexidade ciclomática:
   <img src="./imgs/codigo.png" alt="Código" width="500" style="margin-right: 10px;">
   <img src="./imgs/complexidade-ciclomatica.png" alt="Complexidade Ciclomática" width="300">
 </div>
+
+---
+
+### Diagrama no PlantUML: 
+
+```bash
+@startuml
+skinparam nodesep 40
+skinparam ranksep 5
+
+state 9 #lightskyblue
+state 8 #lightskyblue
+state 7 #lightskyblue
+state 6 #lightskyblue
+state 5 #lightskyblue
+state 4 #lightskyblue
+state 3 #lightskyblue
+state 2 #lightskyblue
+state 1 #lightskyblue
+
+1 --> 2
+1 --> 3
+
+2 --> 4
+3 --> 4
+
+4 --> 9
+4 --> 5
+
+5 --> 9
+5 --> 6
+
+6 --> 9
+6 --> 7
+
+7 --> 9
+7 --> 8
+
+8 --> 9
+@enduml
+```
